@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form Biodata Mahasiswa</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>BIODATA MAHASISWA</h1>
+
+        <p class="subtitle">
+            Silakan isi data biodata Anda
+        </p>
+
+        <form>
+
+            <!-- Nama -->
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+
+                <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+            </div>
+
+
+            <!-- NIM -->
+            <div class="form-group">
+                <label for="nim">NIM</label>
+
+                <input type="text" id="nim" placeholder="Masukkan NIM" inputmode="numeric">
+            </div>
+
+
+            <!-- Program Studi -->
+            <div class="form-group">
+                <label for="prodi">Program Studi</label>
+
+                <input type="text" id="prodi" placeholder="Masukkan program studi">
+            </div>
+
+
+            <!-- Semester -->
+            <div class="form-group">
+                <label for="semester">Semester</label>
+
+                <input type="number" id="semester" placeholder="Masukkan semester" min="1" max="14">
+            </div>
+
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+
+                <input type="email" id="email" placeholder="Masukkan email">
+            </div>
+
+
+            <!-- Tombol -->
+            <div class="button-group">
+                <button type="button" id="btnSimpan">
+                    SIMPAN
+                </button>
+
+                <button type="button" id="btnBersihkan" class="btn-bersihkan">
+                    BERSIHKAN
+                </button>
+            </div>
+
+        </form>
+
+        <!-- Area Tabel Data Mahasiswa -->
+        <div class="tabel-container">
+            <h2>Daftar Biodata Mahasiswa</h2>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>NIM</th>
+                            <th>Nama Lengkap</th>
+                            <th>Program Studi</th>
+                            <th>Semester</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelBody">
+                        <tr>
+                            <td colspan="6" class="text-center">Belum ada data mahasiswa yang tersimpan.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
